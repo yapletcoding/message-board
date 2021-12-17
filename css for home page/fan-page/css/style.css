@@ -1,0 +1,319 @@
+
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(133, 7, 150, 0.568)
+}
+
+#logo img {
+   font-size: 16; 
+   width: 100px;
+   height: 50px;
+}
+
+#create {
+    font-size: 16;
+}
+
+#user-tools {
+   font-size: 16;
+}
+
+#search {
+    font-size: 16;
+}
+
+body {
+    font-size: 16;
+}
+
+#banner {
+    grid-area: banner;
+}
+
+#forums {
+    grid-area: forums;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-forums {
+    font-size: 16;
+}
+
+#top5 {
+   font-size: 16;
+   float: right;
+    height:1000px;
+    width: 500px;
+    overflow:scroll;
+}
+
+#create-forum {
+    display: flex;
+}
+
+#cf {
+    font-size: 16;
+}
+
+#search-forums {
+    font-size: 16;
+}
+
+#posts {
+    grid-area: posts;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#top-posts {
+    font-size: 16;
+}
+
+#top10 {
+    font-size: 16;
+    float: right;
+    height:1000px;
+    width: 500px;
+    overflow:scroll;
+    grid-area: top10;
+}
+
+#create-post {
+    display:flex;
+}
+
+#cp {
+    font-size: 16;
+}
+
+#search-posts{
+    font-size: 16;
+}
+
+#my-forums {
+    grid-area: my-forums;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-top10 {
+    height:450px;
+    width: 300px;
+    overflow:scroll;
+}
+
+#my-top5 {
+    height:450px;
+    width: 300px;
+    overflow:scroll;
+}
+
+#my-posts{
+    grid-area: my-posts;
+    display: flex;
+    flex-direction: column;
+}
+
+#upper-left {
+    grid-area: upper-left;
+    display: flex;
+}
+
+#upper-right {
+    grid-area: upper-right;
+    display: flex;
+    justify-content: right;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+}
+
+main {
+    grid-area: main;
+    background-color: rgba(228, 36, 94, 0.568);
+}
+
+.post-image{
+    height: 200px;
+    width: 200px;
+}
+
+.forum-image{
+    height: 200px;
+    width: 200px;
+}
+
+#p1 {
+    grid-area: p1;
+}
+#p2 {
+    grid-area: p2;
+}
+#p3 {
+    grid-area: p3;
+}
+#p4 {
+    grid-area: p4;
+}
+#p5 {
+    grid-area: p5;
+}
+#p6 {
+    grid-area: p6;
+}
+#p7 {
+    grid-area: p7;
+}
+#p8 {
+    grid-area: p8;
+}
+#p9 {
+    grid-area: p9;
+}
+#p10 {
+    grid-area: p10;
+}
+
+#pi1 {
+    grid-area: pi1;
+}
+#pi2 {
+    grid-area: pi2;
+}
+#pi3 {
+    grid-area: pi3;
+}
+#pi4 {
+    grid-area: pi4;
+}
+#pi5 {
+    grid-area: pi5;
+}
+#pi6 {
+    grid-area: pi6;
+}
+#pi7 {
+    grid-area: pi7;
+}
+#pi8 {
+    grid-area: pi8;
+}
+#pi9 {
+    grid-area: pi9;
+}
+#pi10 {
+    grid-area: pi10;
+}
+
+#f1 {
+    grid-area: f1;
+}
+#f2 {
+    grid-area: f2;
+}
+#f3 {
+    grid-area: f3;
+}
+#f4 {
+    grid-area: f4;
+}
+#f5 {
+    grid-area: f5;
+}
+
+#fi1 {
+    grid-area: fi1;
+}
+#fi2 {
+    grid-area: fi2;
+}
+#fi3 {
+    grid-area: fi3;
+}
+#fi4 {
+    grid-area: fi4;
+}
+#fi5 {
+    grid-area: fi5;
+}
+
+
+@media screen and (min-width: 1025px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        align-items: center;
+        grid-template-areas: 
+        "upper-left . upper-right"
+        "main main main";
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        align-items: top;
+        justify-items: center;
+        grid-template-areas: 
+            "banner banner banner"
+            "forums posts my-forums"
+            "forums posts my-posts"
+            "footer footer footer";
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        align-items: center;
+        grid-template-areas: 
+            "footer footer footer";
+    }
+
+    #top10{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 5px;
+        align-items: top;
+        grid-template-areas: 
+        "p1 pi1"
+        "p2 pi2"
+        "p3 pi3"
+        "p4 pi4"
+        "p5 pi5"
+        "p6 pi6"
+        "p7 pi7"
+        "p8 pi8"
+        "p9 pi9"
+        "p10 pi10";
+    }
+
+    #top5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 5px;
+        align-items: top;
+        grid-template-areas: 
+        "f1 fi1"
+        "f2 fi2"
+        "f3 fi3"
+        "f4 fi4"
+        "f5 fi5";
+    }
+        
+}

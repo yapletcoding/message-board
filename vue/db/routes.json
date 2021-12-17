@@ -1,0 +1,3 @@
+{
+  "/forum/:id": "/forum/:id?_embed=posts"
+}
